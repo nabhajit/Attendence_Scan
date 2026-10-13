@@ -1,0 +1,30 @@
+# Secrets and local env (never commit)
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+build/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local probes / scratch (optional dev scripts)
+_smoke*.py
+_aggprobe.py
+_verify*.py
+
+# Optional scale/concurrency checks (see devtools/README.md); omit for minimal public tree
+devtools/
